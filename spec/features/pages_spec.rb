@@ -7,4 +7,10 @@ describe "Pages Controller" do
       expect(page.status_code).to eq(200)
     end
   end
+
+  describe "About" do
+    it "should be accessible" do
+      visit about_path
+    end
+  end
 end
